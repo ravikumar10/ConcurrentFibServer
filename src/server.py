@@ -96,5 +96,5 @@ def fib_handler(client):
         yield from client.send(resp)    # blocking
     print("Closed")
 
-tasks.append(fib_server(('',25000)))
+tasks.append(fib_server(('',5000)))
 run()
